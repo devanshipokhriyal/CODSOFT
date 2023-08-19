@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="brand">Travel</a>
+        <div class="menu-btn">
+
+        </div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Explore</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+        <video class="video-slider" src="1.mp4" autoplay muted loop>
+
+        </video>
+        <div class="content">
+            <h1>Wonderful.<br><span>Island</span></h1>
+            <p>Dive into the endless allure of the ocean and embark on an unforgettable journey with us. Unveil the ocean's mysteries as you snorkel through vibrant coral gardens, home to an array of marine wonders. Whether you're seeking thrilling water sports or tranquil seaside retreats, the ocean's vast playground promises an experience like no other. Indulge in delectable seafood delicacies, explore coastal gems steeped in history, and let the soothing rhythm of the tides rejuvenate your soul. So, answer the call of the sea and let your wanderlust set sail with us to create cherished memories along the enchanting shores of the ocean.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        const menuBtn= document.querySelector(".menue-btn");
+        const navigation= document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click",() => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
+</html>
